@@ -1,7 +1,7 @@
 # Hotel Booking Analysis
 
 ## Overview
-This project conducts an analysis of a hotel booking dataset obtained from Kaggle. The dataset used can be found [here](https://www.kaggle.com/datasets/mojtaba142/hotel-booking). It covers various aspects of data manipulation, cleaning, exploration, and visualization to derive insights about roller coasters.
+This project conducts an analysis of a hotel booking dataset obtained from Kaggle. The dataset used can be found [here](https://www.kaggle.com/datasets/mojtaba142/hotel-booking). It covers various aspects of data manipulation, cleaning, exploration, and visualization to derive insights.
 
 ## Environment Setup
 

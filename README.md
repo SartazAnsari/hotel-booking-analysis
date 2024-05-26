@@ -36,6 +36,7 @@ For better readability due to custom client display functionality, use [nbviewer
                 ```
         3. Install the required packages:
             ```bash
+            pip install notebook
             pip install ipykernel
             pip install kaggle
             pip install pandas matplotlib seaborn
@@ -52,6 +53,7 @@ For better readability due to custom client display functionality, use [nbviewer
             ```
         4. Install the required packages:
             ```bash
+            conda install -c conda-forge notebook
             conda install -c conda-forge ipykernel
             conda install -c conda-forge kaggle
             conda install pandas matplotlib seaborn 

@@ -3,58 +3,66 @@
 ## Overview
 This project conducts an analysis of a hotel booking dataset obtained from Kaggle. The dataset used can be found [here](https://www.kaggle.com/datasets/mojtaba142/hotel-booking). It covers various aspects of data manipulation, cleaning, exploration, and visualization to derive insights.
 
-## Environment Setup
+## Viewing the Notebook
+For better readability due to custom client display functionality, use [nbviewer](https://nbviewer.org). This provides an improved display as GitHub's notebook viewer does not execute the code.
+* [HotelBookingAnalysis.ipynb](https://nbviewer.org/github/SartazAnsari/hotel-booking-analysis/blob/main/HotelBookingAnalysis.ipynb)
+
+## Prerequisites
+* **Python 3.x:** Download and install from [python.org](https://www.python.org/).
+
+## Setup
 
 1. Clone the repository to your local machine:
-   ```
+   ```bash
    git clone https://github.com/SartazAnsari/hotel-booking-analysis.git
    cd hotel-booking-analysis
    ```
 
-2. ### Conda Setup
-    1. Create a new Conda environment:
-        ```
-        conda create --name hotel-booking-analysis-env python=3.12
-        ```
-    2. Activate the environment:
-        ```
-        conda activate hotel-booking-analysis
-        ```
-    3. Install the required packages:
-        ```
-        conda install -c conda-forge ipykernel
-        conda install -c conda-forge kaggle
-        # if not installed
-        conda install pandas matplotlib seaborn 
-        ```
-3. ### Python Setup (Alternative)
-    1. If you prefer Python’s built-in virtual environment
-        ```
-        python -m venv hotel-booking-analysis-env
-        ```
-    2. Activate the environment:
-        * Windows:
+2. **[ CHOOSE ANYONE ] Environment setup**
+    * Using **Python**
+        1. Create virtual environment: 
+            ```bash
+            python -m venv hotel-booking-analysis-env
             ```
-            hotel-booking-analysis-env\Scripts\activate
-            ```
-        * Unix or MacOS:
-            ```
-            source hotel-booking-analysis-env/bin/activate
+        2. Activate the environment:
+            * Windows:
+                ```bash
+                hotel-booking-analysis-env\Scripts\activate
+                ```
+            * Unix or MacOS:
+                ```bash
+                source hotel-booking-analysis-env/bin/activate
 
+                ```
+        3. Install the required packages:
+            ```bash
+            pip install ipykernel
+            pip install kaggle
+            pip install pandas matplotlib seaborn
             ```
-    3. Install the required packages:
-        ```
-        pip install ipykernel
-        pip install kaggle
-        pip install pandas matplotlib seaborn
-        ```
+    * Using **Conda**
+        1. Install **Miniconda/Anaconda**: Download and install from [conda.io](https://conda.io).
+        2. Create a new Conda environment:
+            ```bash
+            conda create --name hotel-booking-analysis-env python=3.12
+            ```
+        3. Activate the environment:
+            ```bash
+            conda activate hotel-booking-analysis
+            ```
+        4. Install the required packages:
+            ```bash
+            conda install -c conda-forge ipykernel
+            conda install -c conda-forge kaggle
+            conda install pandas matplotlib seaborn 
+            ```
 
-## Setting up the Kaggle API
-1. Sign in to **Kaggle** and navigate to the **Account** tab of your user profile.
-2. Scroll down to the **API** section and click on **Create New API Token**. 
-3. This will download a file named ```kaggle.json``` containing your API credentials.
-4. Place the ```kaggle.json``` file in the ```~/.kaggle/``` directory. If the directory does not exist, create it.
-5. You're all set up! You can now use the Kaggle API to download datasets directly to your project.
+3. **[ IF NOT SET BEFORE ] Setting up the Kaggle API**
+    * Sign in to **Kaggle** and navigate to the **Account** tab of your user profile.
+    * Scroll down to the **API** section and click on **Create New API Token**. 
+    * This will download a file named ```kaggle.json``` containing your API credentials.
+    * Place the ```kaggle.json``` file in the ```~/.kaggle/``` directory. If the directory does not exist, create it.
+    * You're all set up! You can now use the Kaggle API to download datasets directly to your project.
 
 ## Analysis
 1. **Hotel Booking Status:** Visualize the proportion of canceled and non-canceled bookings using pie charts.
